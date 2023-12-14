@@ -11,7 +11,7 @@ BEGIN
         JOIN projects AS P ON C.project_id=P.id 
         GROUP BY indvd.id)
     AS WA
-    SET U.average_score = WA.w_avg 
+    SET indvd.average_score = WA.w_avg 
     WHERE indvd.id=WA.id;
 END
 $$
