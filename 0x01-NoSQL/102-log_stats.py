@@ -41,7 +41,7 @@ def print_top_ips(server_collection):
     )
     for request_log in request_logs:
         ip = request_log['_id']
-        ip_requestst = request_log['totalRequests']
+        ip_requests = request_log['totalRequests']
         print('\t{}: {}'.format(ip, ip_requests))
 
 
