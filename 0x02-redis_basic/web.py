@@ -9,6 +9,9 @@ from typing import Callable
 
 
 redis_store = redis.Redis()
+"""
+redis instance module
+"""
 
 
 def data_cacher(method: Callable) -> Callable:
